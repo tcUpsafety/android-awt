@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-awt.iml" filepath="$PROJECT_DIR$/android-awt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/awtcompat/awtcompat.iml" filepath="$PROJECT_DIR$/awtcompat/awtcompat.iml" />
     </modules>
   </component>
 </project>
