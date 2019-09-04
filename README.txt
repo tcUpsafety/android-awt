@@ -1,54 +1,39 @@
-android-awt
-=============
 
-This project replaces java.awt and javax.imagio since we can't use 
-these classes on Android.  This GitHub project is created to maintain any minor modifications we may need to make from the original code from appengine-awt.
+## android-awt
 
+### This is a fork of [windwardadmin/android-awt](https://github.com/windwardadmin/android-awt)
 
-=========
-CHANGELOG
-=========
+This project provides java.awt and javax.imagio since we can't use 
+these classes on Android. Code is taken from Apache Harmony, Apache Commons Imaging and [witwall/appengine-awt](https://github.com/witwall/appengine-awt).
 
- 1.0.0 - initial branch from appengine-awt and project set-up
+### Import
 
+```
+repositories {
+    maven { url "https://jitpack.io" }
+}
+```
 
-============
-DEPENDENCIES
-============
-	
-IMPORTANT: You need to add the included jars to the local Maven repository in
-		   order to build android-awt.  To do this, run the .bat script
-		   located in the dep directory.
-
- -  Maven
-	In order to build sfntly and android-awt, you need Maven (it was already
-	set up well for both projects) -- Maven will basically generate all the
-	jars without a second thought.
-
- -  sfntly (jar included in dep)
-    Located at: https://code.google.com/p/sfntly/
-	
-
-========
-BUILDING
-========
-
- -  This project uses Maven (I didn't want to set up ant and Maven worked
-    perfectly well and was already set up).  You should check the Dependencies
-	section before building to make sure dependencies are satisfied!!
-
-		mvn clean - clean up generated files
-		mvn compile - compile
-		mvn test - run tests (haha j/k; there are none)
-		mvn package - generate a jar <-- This is most likely what you want
-		mvn install - install to the local Maven repository
-
- -  any output files generated are usually placed in target\ such as the jar and
-    class files.
-
- -  The version number can be updated in pom.xml
+```
+dependencies {
+	implementation 'com.github.andob:android-awt:1.0.0'
+}
+```
 
 
-=====
-ABOUT
-=====
+### You can use this library in order to make [OpenPDF](https://github.com/LibrePDF/OpenPDF) [work on Android](https://github.com/LibrePDF/OpenPDF/issues/118)
+
+```
+repositories {
+    maven { url "https://jitpack.io" }
+}
+```
+
+```
+dependencies {
+	implementation 'com.github.librepdf:openpdf:1.3.8'
+	implementation 'com.github.andob:android-awt:1.0.0'
+}
+```
+
+### Licensed under Apache License
