@@ -20,6 +20,7 @@
 package java.awt;
 
 import java.awt.image.BufferStrategy;
+import java.awt.image.ImageProducer;
 
 import org.apache.harmony.luni.util.NotImplementedException;
 
@@ -87,6 +88,11 @@ public class Canvas extends Component {
     String autoName() {
         return "";
 //        return ("canvas" + toolkit.autoNumber.nextCanvas++); //$NON-NLS-1$
+    }
+
+    public Image createImage(ImageProducer imageProducer)
+    {
+        return null;
     }
 }
 
