@@ -16,7 +16,7 @@ repositories {
 
 ```
 dependencies {
-	implementation 'com.github.andob:android-awt:1.0.0'
+	implementation 'com.github.andob:android-awt:1.0.1'
 }
 ```
 
@@ -32,8 +32,15 @@ repositories {
 ```
 dependencies {
 	implementation 'com.github.librepdf:openpdf:1.3.8'
-	implementation 'com.github.andob:android-awt:1.0.0'
+	implementation 'com.github.andob:android-awt:1.0.1'
 }
+```
+
+### Proguard
+
+```
+-dontwarn org.bouncycastle.**
+-dontwarn java.lang.invoke.**
 ```
 
 ### Licensed under Apache License
