@@ -10,13 +10,13 @@ these classes on Android. Code is taken from Apache Harmony, Apache Commons Imag
 
 ```
 repositories {
-    maven { url "https://jitpack.io" }
+    maven { url "http://www.andob.info" }
 }
 ```
 
 ```
 dependencies {
-	implementation 'com.github.andob:android-awt:1.0.1'
+	implementation 'ro.andob.androidawt:androidawt:1.0.2'
 }
 ```
 
@@ -25,14 +25,14 @@ dependencies {
 
 ```
 repositories {
-    maven { url "https://jitpack.io" }
+    maven { url "http://www.andob.info" }
 }
 ```
 
 ```
 dependencies {
 	implementation 'com.github.librepdf:openpdf:1.3.8'
-	implementation 'com.github.andob:android-awt:1.0.1'
+	implementation 'ro.andob.androidawt:androidawt:1.0.2'
 }
 ```
 
